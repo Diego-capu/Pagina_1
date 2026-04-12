@@ -1,0 +1,88 @@
+section{
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.peliculas-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* 3 columnas */
+    gap: 25px;
+}
+.peliculas{
+    background: rgba(0, 0, 0, 0.6);
+    border: 4px solid #ffff00;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px #ffff00;
+    height: 500px;
+    
+}
+img{
+    width: 400px;
+    height: 200px;
+}
+.buscador{
+    height: 600px;
+    background-color: rgb(37, 173, 211);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+nav{
+    height: 60px;
+    background-color: rgb(17, 210, 62);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+ul {
+  display: flex;
+  justify-content: center; /* Alineación horizontal: flex-start, flex-end, center, space-between */
+  list-style-type: none; /* Quita los puntos */
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  align-items: center;
+  
+}
+a{
+    margin: 0 15px;
+    align-items: center;
+}
+header {
+    background-color: #ffff00;
+    display: flex;                    /* ← Esta es la línea mágica */
+    align-items: center;              /* Alinea todo verticalmente en el centro */
+    justify-content: space-between;   /* Pone el logo a la izquierda y el nav a la derecha */
+}
+
+.trailers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   /* 3 columnas */
+    gap: 25px;
+
+}
+.videos{
+    background: rgba(0, 0, 0, 0.6);
+    border: 4px solid #ffff00;
+    padding: 20px;
+    text-align: center;
+    
+    height: 350px;
+}
+.actores-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* 3 columnas */
+    gap: 25px;
+    max-width: 1800px;
+
+}
+.actores_fotos{
+    background: rgba(0, 0, 0, 0.6);
+    border: 4px solid #ffff00;
+    padding: 20px;
+    text-align: center;
+    
+    height: 600px;
+    width: 400px;
+}
