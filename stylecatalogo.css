@@ -19,28 +19,60 @@ section {
     margin: 0 auto;
 }
 
-h1 {
+h1{
     color: #ffffff;
 }
 
-.peliculas-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 columnas */
-    gap: 25px;
+.life-content {
+    padding: 40px 40px;
+    background:  #000000 ;
+    color: white;
+    max-width: 1400px;
+    margin: 10px;
+    border-radius: 10px;
+    height: 1000px;
 }
-
-.peliculas {
-    position: relative;
-    /* Muy importante */
-    overflow: hidden;
-    border: 4px solid #000000;
-    box-shadow: 0 0 15px #000000;
+.contenido {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    
+}
+.texto {
+    flex: 1;
+}
+.texto h1 {
+    font-size: 4.5em;
+    line-height: 1.1;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.galeria {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 img {
     width: 400px;
     height: 400px;
+}
+.imagen{
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px  #26449c (255, 255, 255, 0.6);
+}
+.imagen:hover img {
+    transform: scale(1.08);
+}
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
 .peliculas img {
@@ -81,47 +113,30 @@ img {
 }
 
 h2 {
-    color: rgb(240, 248, 255);
+    color: rgb(255, 255, 255);
 }
 
 .buscador {
-    height: 650px;
-    background-image: url("descarga.jpg");
-    /* Cambie por la foto que quiera usar */
+    height: 560px;
+    width: 1300px;
+    background-image: url("imagenes/642012.jpg");
     background-size: cover;
     background-position: center;
-    position: relative;
-    display: flex;
-    align-items: center;
+    border-radius: 10px;
     justify-content: center;
     text-align: center;
     color: rgb(255, 255, 255);
+    align-items: end;
+    align-items: center;
     overflow: hidden;
-}
+    display: flex;
+    
+    
+}   
 
-.buscador-form button {
-    padding: 18px 40px;
-    font-size: 1.3em;
-    font-weight: bold;
-    background: #ffffff;
-    /* Verde brillante como en la imagen */
-    color: black;
-    border: none;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.buscador-form input {
-    flex: 1;
-    padding: 18px 20px;
-    font-size: 1.2em;
-    border: none;
-    background: rgba(0, 0, 0, 0.85);
-    color: white;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
+.buscador-contenido{
+    text-align: center;
+   
 }
 
 nav {
@@ -131,34 +146,37 @@ nav {
     justify-content: center;
     display: flex;
 }
+nav li{
+    transition: transform 0.5s ease;
+}
 
 nav a {
     color: #ffffff;
     font-size: 1.0em;
-    /* Letras grandes */
     font-weight: 400;
     text-decoration: none;
     letter-spacing: 2px;
     transition: all 0.3s ease;
     position: relative;
+    transition: transform 0.5s ease;
 }
 
 ul {
     display: flex;
     justify-content: center;
-    /* Alineación horizontal: flex-start, flex-end, center, space-between */
     list-style-type: none;
-    /* Quita los puntos */
     padding: 0;
     margin: 0;
     font-weight: 500;
     align-items: center;
+    transition: transform 0.5s ease;
 
 }
 
 a {
     margin: 0 15px;
     align-items: center;
+    transition: transform 0.5s ease;
 }
 
 header {
@@ -171,38 +189,81 @@ header {
     /* Pone el logo a la izquierda y el nav a la derecha */
 }
 
-.trailers {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* 3 columnas */
-    gap: 25px;
 
-}
 
 .videos {
     background: rgba(0, 0, 0, 0.6);
-    border: 4px solid #293737;
     padding: 20px;
     text-align: center;
-
-    height: 350px;
+    height: 850px;
 }
 
 .actores-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 3 columnas */
     gap: 25px;
     max-width: 1800px;
 
 }
 
 .actores_fotos {
-    background: rgba(0, 0, 0, 0.6);
-    border: 4px solid #293737;
+    background: #000000;
+    border-radius: 10px;
     padding: 20px;
     text-align: center;
-
-    height: 600px;
+    height: 800px;
     width: 400px;
+    border: 10px;
+    
+    
+}
+
+h3{
+    color: #ffffff;
+    
+}
+img{
+    height: 700px;
+    border: 10px;
+    border-radius: 10px;
+}
+
+footer{
+    text-align: center;
+    background-color: #000000;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-position: center;
+    align-items: end;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    
+    
+}
+.final-page{
+    align-items: center;
+    display: flex;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    background-position: center;
+    align-items: end;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.final-page img{
+    height: 80px;
+    width: 100px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-position: center;
 }
