@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'life';
-    src: url('fuentes/HelvetiHand.ttf') format('ttf'),
-         url('fuentes/HelvetiHand.ttf') format('truetype');
+    src: url('fuentes/Dune_Rise.otf') format('otf'),
+         url('fuentes/Dune_Rise.ttf') format('truetype');
     
     font-weight: normal;
     font-style: normal;
@@ -36,7 +36,16 @@ h1{
     align-items: center;
     margin: 0 auto;
     border-radius: 5px;
+    animation: zoomFondo 2.5s ease-in-out infinite alternate;
 }
+@keyframes zoomFondo {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 110%; /* Aumenta ligeramente el tamaño */
+  }
+}  
 .contenido h2{
     color: #ffffff;
 }
